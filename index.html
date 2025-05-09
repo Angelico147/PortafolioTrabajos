@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="author" content=" Ricardo Rodriguez">
+    <meta name="description" content="Portafolio de desarrollo web de Ricardo Rodriguez">
+    <meta name="keywords" content="HTML, CSS , JS ,REACT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- FAVICON -->
+    <link rel="icon"  type="image/x-icon" href="img/icono-favicon.png">
+    <!-- BOOSTRAP CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!-- ICONO DE BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  
+    <!-- Conexion con CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ProyectoBostrap</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Mono:wght@414&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SECCION MENU  NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  <!-- Si se hace responsive , esto se convierte en un boton mostrando las alternativas -->
+      
+
+
+      <div class="collapse navbar-collapse " id="navbar-toggler"><!-- Acá tiene que coincidir con su #ID -->
+        <a class="navbar-brand" href="#">
+          <img src="img/icono-favicon.png" width="50" alt="Logo de la pagina web"> 
+        </a>
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#contacto" >Contacto</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Hero -->
+   <Section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador  rounded-circle" src="img/868.jpg" alt="Foto de Ricardo Rodriguez">
+      <h1>Hola, soy Ricardo Rodriguez</h1>
+      <h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>
+    </div>
+
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="img/hero-inferior.png" alt="Monitor Laptop y Logos de HTML Y CSS JS Y REACT">
+
+    </div>
+
+   </Section>
+      
+
+   <!-- Seccion Sobre mi -->
+    <section  id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo texto-blanco">Conoce a Ricardo Rodriguez</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit arcu ac enim ullamcorper, vel pellentesque ligula aliquet. Phasellus euismod fringilla risus, id commodo enim suscipit ac. Sed euismod nibh nec imperdiet tempus. Vivamus vitae sem urna. Nullam finibus purus nulla, ac mollis eros pharetra vel. Nulla ex leo, porttitor non nisl lobortis, lacinia lacinia nibh. Nulla facilisi. Quisque vestibulum nisl ac massa faucibus fermentum. Fusce sit amet leo quam. Sed lacinia, nibh et pellentesque gravida, nulla nisi mattis magna, at sollicitudin mi arcu eget ante.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit arcu ac enim ullamcorper, vel pellentesque ligula aliquet. Phasellus euismod fringilla risus, id commodo enim suscipit ac. Sed euismod nibh nec imperdiet tempus. Vivamus vitae sem urna. Nullam finibus purus nulla, ac mollis eros pharetra vel.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit arcu ac enim ullamcorper, vel pellentesque ligula aliquet. Phasellus euismod fringilla risus, id commodo enim suscipit ac. Sed euismod nibh nec imperdiet tempus. Vivamus vitae sem urna. Nullam finibus purus nulla, ac mollis eros pharetra vel.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit arcu ac enim ullamcorper, vel pellentesque ligula aliquet. Phasellus euismod fringilla risus, id commodo enim suscipit ac. Sed euismod nibh nec imperdiet tempus. Vivamus vitae sem urna. Nullam finibus purus nulla, ac mollis eros pharetra vel.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">FreeCodeCamp</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Proyectos -->
+     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro"> Mis Proyectos</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado</h3>
+    
+   
+        <!-- Galeria de Proyectos -->
+
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto1.png" alt="Proyecto1">
+              <div class="overlay">
+                <p>Proyecto1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto2.png" alt="Proyecto2">
+              <div class="overlay">
+                <p>Proyecto2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto3.png" alt="Proyecto3">
+              <div class="overlay">
+                <p>Proyecto3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto4">
+              <div class="overlay">
+                <p>Proyecto4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto5.png" alt="Proyecto5">
+              <div class="overlay">
+                <p>Proyecto5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto6">
+              <div class="overlay">
+                <p>Proyecto6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" ></i>
+                  </a>
+                  <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          
+
+          </div>
+          
+        </div>
+      </div>
+
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info"> 
+        Ver más proyectos<i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+      </a>
+
+
+    </section>
+
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Articulos</h2> 
+      <div class="card" >
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">El decordaror @property en ptython, como usarlo</li>
+          </a>
+          <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Python tutorial ciclos while , ejemplos de sintaxis</li>
+          </a>
+          <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Como cargar una base de Datos</li>
+          </a>
+          <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">Como escribir  en un archivo de Python</li>
+          </a>
+          <a href="https://www.udemy.com/es/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">¿Para qué se usa Python ?</li>
+          </a>
+         
+        </ul>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info"> 
+        Ver más Articulos<i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+      </a>
+    </section>
+    
+    <!-- Seccion Testimonio -->
+
+    <section id="testimonios" class="testimonios seccion-clara">
+
+      <h2 class="seccion-titulo"> Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes ...</h3>
+
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle " src="imagenes/cliente1.svg" alt="Imagen del primer cliente1">
+              <p class="testimonio-texto"> Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Ricardo</p>
+                <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle " src="imagenes/cliente2.svg" alt="Imagen del primer cliente1">
+              <p class="testimonio-texto"> Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Fundadora de Grupo IOS</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle " src="imagenes/cliente3.svg" alt="Imagen del primer cliente1">
+              <p class="testimonio-texto"> Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de Tik tokb</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto de desarrollo web
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+             <a href="mailto:janedoe@correo.com">
+              <button type="button">
+                Contacto<i class="bi bi-envelope-arrow-down-fill"></i>
+              </button>
+             </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center ">
+      <img class="footer-logo" src="img/icono-favicon.png" alt="Logo de Portafolio">
+      <p class="footer-texto text-center"> Aprendo y creo todos los días <br> Creemos un proyecto juntos
+      </p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Ricardo Rodriguez &#169;</div>
+    </footer>
+     <!-- BOOSTRAP JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</body>
+</html>
